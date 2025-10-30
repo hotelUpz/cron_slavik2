@@ -338,7 +338,8 @@ class Core:
         write_logs_interval = 5.0
 
         last_instrume_time = time.monotonic()
-        last_write_logs_time = time.monotonic()      
+        last_write_logs_time = time.monotonic()   
+        print(self.context.fetch_symbols)   
         print(self.context.position_vars)
 
         while not self.context.stop_bot:
