@@ -2,12 +2,12 @@
 set -e
 clear
 
-# !!! Specify path to Python 3.12 here !!!
-PYTHON_PATH="/usr/bin/python3.12"
+# Path to Python 3.13
+PYTHON_PATH="/usr/bin/python3.13"
 
 echo "[1/7] Checking virtual environment..."
 if [ ! -d ".venv" ]; then
-    echo "[1/7] Creating virtual environment with Python 3.12..."
+    echo "[1/7] Creating virtual environment with Python 3.13..."
     "$PYTHON_PATH" -m venv .venv
 fi
 
