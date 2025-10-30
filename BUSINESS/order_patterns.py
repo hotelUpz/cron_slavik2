@@ -538,7 +538,7 @@ class HandleOrders:
                 sub_tasks.append(trade_task())  # Вызываем корутину
             try:
                 if sub_tasks:
-                    self.error_handler.debug_info_notes(f"[PARALLEL][{symbol}] Starting tasks: {len(sub_tasks)} tasks, tasks: {[type(t).__name__ for t in sub_tasks]}")
+                    # self.error_handler.debug_info_notes(f"[PARALLEL][{symbol}] Starting tasks: {len(sub_tasks)} tasks, tasks: {[type(t).__name__ for t in sub_tasks]}")
                     sync_event.set()  # Разрешаем задачам двигаться к make_order
                     await asyncio.gather(*sub_tasks)
             except Exception as e:

@@ -264,7 +264,7 @@ class PositionsUpdater(PositionCleaner):
                 debug_label = f"{user_name}_{strategy_name}_{symbol}_{position_side}"
                 
                 if not strategy_positions.get(symbol, {}).get(position_side):
-                    self.error_handler.debug_info_notes(f"No data for {debug_label}, skipping")
+                    # self.error_handler.debug_info_notes(f"No data for {debug_label}, skipping")
                     continue
 
                 symbol_data = strategy_positions[symbol][position_side]

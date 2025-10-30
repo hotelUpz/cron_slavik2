@@ -1,0 +1,4 @@
+{'id': '[Slavik2][cron]', 'target': 'place_order', 'error_text': '{"code":-4164,"msg":"Order\'s notional must be no smaller than 5 (unless you choose reduce only)."}', 'error_code': 400, 'time': '2025-10-30 03:25:01', 'symbol': 'BRUSDT'}
+{'id': '[Slavik2][cron]', 'target': 'place_order', 'error_text': '{"code":-4164,"msg":"Order\'s notional must be no smaller than 5 (unless you choose reduce only)."}', 'error_code': 400, 'time': '2025-10-30 03:25:02', 'symbol': 'BRUSDT'}
+{'id': '[Slavik2][cron]', 'target': 'place_order', 'error_text': '{"code":-4164,"msg":"Order\'s notional must be no smaller than 5 (unless you choose reduce only)."}', 'error_code': 400, 'time': '2025-10-30 03:26:02', 'symbol': 'BRUSDT'}
+{'id': '[Slavik2][cron]', 'target': 'place_order', 'error_text': '{"code":-4164,"msg":"Order\'s notional must be no smaller than 5 (unless you choose reduce only)."}', 'error_code': 400, 'time': '2025-10-30 03:27:01', 'symbol': 'BRUSDT'}

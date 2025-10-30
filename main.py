@@ -339,6 +339,7 @@ class Core:
 
         last_instrume_time = time.monotonic()
         last_write_logs_time = time.monotonic()      
+        print(self.context.position_vars)
 
         while not self.context.stop_bot:
             try:
