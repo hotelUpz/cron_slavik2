@@ -58,7 +58,7 @@ class StrategySettings():
                             "ind_name": 'CRON_IND'
                         },  #               
                     },     
-                    "is_close_bar": True,       # Дожидаться закрытия бара                
+                    "is_close_bar": True,       # Дожидаться закрытия бара                   
                     "grid_orders": [
                         {'indent': 0.0, 'volume': 14, 'signal': True},
                         {'indent': -8, 'volume': 14, 'signal': False}, # %
