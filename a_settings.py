@@ -64,13 +64,13 @@ class UsersSettings():
                 "margin_type": "CROSSED",         # Тип маржи. Кросс-маржа → "CROSSED", Изолированная → "ISOLATED"
                 "quote_asset": "USDT",            # → валюта, в которой указана цена (например, USDT, USDC, BUSD)
                 "direction": 3,                   # 1 -- LONG, 2 --SHORT, 3 -- BOTH
-                "long_positions_limit": 7,        # количество одновременно открываемых лонгов
-                "short_positions_limit": 7,       # количество одновременно открываемых шортов
+                "long_positions_limit": 6,        # количество одновременно открываемых лонгов
+                "short_positions_limit": 6,       # количество одновременно открываемых шортов
             },
 
             "symbols_risk": {
                 "TAC": {
-                    "margin_size": 33.2,          # размер маржи в USDT (либо другой базовой валюте)
+                    "margin_size": 59,          # размер маржи в USDT (либо другой базовой валюте)
                     "leverage": 10,               # размер плеча. Общий объем на сделку == (margin_size x leverage)
                     "sl": None,                   # %, float, отрицательное значение. Отключено -- None
                     "fallback_sl": None,          # tp на случай отказа основного тейка
@@ -83,7 +83,7 @@ class UsersSettings():
                     "reverse": False              # reverse при Мартине
                 },
                 "UB": {
-                    "margin_size": 33.2,          # размер маржи в USDT (либо другой базовой валюте)
+                    "margin_size": 59,          # размер маржи в USDT (либо другой базовой валюте)
                     "leverage": 10,               # размер плеча. Общий объем на сделку == (margin_size x leverage)
                     "sl": None,                   # %, float, отрицательное значение. Отключено -- None
                     "fallback_sl": None,          # tp на случай отказа основного тейка
@@ -97,7 +97,7 @@ class UsersSettings():
                 },
 
                 "ANY_COINS": {
-                    "margin_size": 47.5,          # размер маржи в USDT (либо другой базовой валюте)
+                    "margin_size": 80,          # размер маржи в USDT (либо другой базовой валюте)
                     "leverage": 10,               # размер плеча. Общий объем на сделку == (margin_size x leverage)
                     "sl": None,                   # %, float, отрицательное значение. Отключено -- None
                     "fallback_sl": None,          # tp на случай отказа основного тейка
@@ -147,7 +147,7 @@ class UsersSettings():
                     "is_active": True,
                     # "symbols": TokensTemplate().tokens_template,  # -- список токенов (выбрать из шаблона)
                     # "symbols": {"UB", "BR", "ARIA", "PLAY", "REI", "SOPH", "TAC"},         # -- -//- (либо указать вручную)
-                    "symbols": {"UB", "BR", "ARIA", "PLAY", "REI", "SOPH", "TAC"},         # -- -//- (либо указать вручную)
+                    "symbols": {"UB", "BR", "ARIA", "REI", "SOPH", "TAC"},         # -- -//- (либо указать вручную)
                     # "symbols": {"BR"},         # -- -//- (либо указать вручную)
                 }),
             ],
@@ -161,9 +161,9 @@ TG_BOT_ID: str = "610822492" # -- id бота
 FILTER_WINDOW: str = "5m" # (1m, 2m, 3m, 4m, 5m, 15m, 30m, 1h, 2h, 4h, 12h, 1d)
 
 # ----------- UTILS ---------------
-WAIT_CLOSE_CANDLE: int = 5                 # sec. Ожидаем формирования новой свечи
-TZ_STR: str = "Europe/Kyiv"                # часовой пояс ("Europe/Berlin")
-MAX_LOG_LINES: int = 1001                  # количество строк в лог файлах
+WAIT_CLOSE_CANDLE: int = 5                  # sec. Ожидаем формирования новой свечи
+TZ_STR: str = "Europe/Berlin"               # часовой пояс ("Europe/Berlin")
+MAX_LOG_LINES: int = 1001                   # количество строк в лог файлах
 
 # --------- SYSTEM ----------------
 USE_CACHE: bool = False                    # использовать кеш для восстановления позиции. При деплое на сервер можно отключить 
